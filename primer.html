@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3 примера</title>
+</head>
+<body background="background39.png">
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<center><h2>Реши пример, и введи ответ в поле ввода. Далее нажми кнопку</h2></center>
+	</br>
+	<center><input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/></center>
+	<script type="text/javascript">
+		let num1 = Math.ceil(Math.random() * 10);
+		let num2 = Math.ceil(Math.random() * 10);
+
+		numF = (num1 * num2);
+
+		document.write('<center><h3 id=fen>' + num1 + ' * ' + num2 + '</h3></center>');
+
+		function onCli() {
+			var defen = document.getElementById("searchTxt");
+			var feden = defen.value;
+			var numFen = window.numF;
+			if (feden == numFen) {
+				alert("Пример решен верно!");
+				window.location='http://0s.o53xo.pfxxk5dvmjss4y3pnu.cmle.ru/';
+			}
+			if (feden != numFen) {
+				alert("Пример решен НЕверно!");
+			}
+		}
+	</script>
+
+	<center><button onclick ="onCli()">Ответить!</button></center>
+
+	<br/>
+
+	<style type="text/css">
+		hr {
+			color: #008F0A;
+			background-color: #008F0A;
+		}
+		input {
+			height: 26px;
+			font-size: 20px;
+			font-family: Arial Black;
+			background: #E8E8E8;
+			border: 0px;
+			border-color: #8F8F8F;
+			text-align: center;
+		}
+		#jstext {
+			font-size: 36px;
+			font-family: Arial Black;
+			color: #07AB34;
+		}
+		h2 {
+			color: #545454;
+			font-family: Arial Black;
+			font-weight: bold;
+		}
+		h3 {
+			color: #545454;
+			font-family: Arial Black;
+			font-weight: bold;
+		}
+		button {
+			font-size: 18px;
+			font-weight: 700;
+  			color: white;
+  			text-decoration: none;
+  			padding: .8em 1em calc(.8em + 3px);
+  			border-radius: 3px;
+  			background: rgb(64,199,129);
+  			box-shadow: 0 -3px rgb(53,167,110) inset;
+  			transition: 0.2s;
+    		width: 172px;
+    		height: 54px;
+		}
+		button:hover { background: rgb(53, 167, 110); }
+		button:active {
+			background: rgb(33,147,90);
+			box-shadow: 0 3px rgb(33,147,90) inset;
+		</style>
+</body>
+</html>

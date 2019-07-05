@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Переадресация на YouTube</title>
+</head>
+<body background="background39.png">
+	<style type="text/css">
+		h1, h3 {
+			color: #545454;
+			font-family: Arial Black;
+			font-weight: bold;
+		}
+		h1 {
+			font-size: 500%;
+		}
+		h3 {
+			font-size: 210%;
+		}
+		input {
+			font-size: 24px;
+			font-weight: 700;
+  			color: white;
+  			text-decoration: none;
+  			padding: .8em 1em calc(.8em + 3px);
+  			border-radius: 3px;
+  			background: rgb(64,199,129);
+  			box-shadow: 0 -3px rgb(53,167,110) inset;
+  			transition: 0.2s;
+    		width: 500px;
+    		height: 100px;
+		}
+		input:hover { background: rgb(53, 167, 110); }
+		input:active {
+			background: rgb(33,147,90);
+			box-shadow: 0 3px rgb(33,147,90) inset;
+		}
+	</style>
+
+	<center><h1>Чтобы открыть Ютуб</h1></center>
+	<center><h3>тебе нужно либо решить пример, либо прочитать текст и ответить на вопросы ↓Нажми на кнопку - что будешь делать↓</h3></center>
+	<center><input type="button" value="Решить 3 примера" onClick='location.href="primer.html"' id="1"></input><input type="button" value="Прочитать текст" onClick='location.href="text.html"' id="2"></input></center>
+</body>
+</html>
